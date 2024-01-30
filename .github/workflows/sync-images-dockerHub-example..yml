@@ -33,7 +33,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/entrypoint:v0.55.0@sha256:9700c999620902de532eb7a081c28887b037457104bb0b0936d957de2600c8db docker://haogeiscoming/entrypoint:v0.55.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop:v0.55.0@sha256:c1d5c51166b43ed82f38314656a3625eb4b8ee2494cd322e9d7b0f28c1c4db58 docker://haogeiscoming/nop:v0.55.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/sidecarlogresults:v0.55.0@sha256:555169c5d8100d2b87b0f4212c1b28f01c7974fb569632c0e5e5fe0f8a152a6f docker://haogeiscoming/sidecarlogresults:v0.55.0
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/workingdirinit:v0.55.0@sha256:093e58239bd6d7c6c6314354694a94ba846d8aa2aad6e57fda32854c8e85adde docker://haogeiscoming/workingdirinit:v0.55.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/entrypoint:v0.55.0 docker://haogeiscoming/entrypoint:v0.55.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop:v0.55.0 docker://haogeiscoming/nop:v0.55.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/sidecarlogresults:v0.55.0 docker://haogeiscoming/sidecarlogresults:v0.55.0
+        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/workingdirinit:v0.55.0 docker://haogeiscoming/workingdirinit:v0.55.0

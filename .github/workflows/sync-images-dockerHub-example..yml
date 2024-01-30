@@ -33,4 +33,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/git-init:v0.21.0 docker://haogeiscoming/git-init:v0.21.0
+        skopeo copy --all docker://registry.gitlab.com/gitlab-org/gitlab-runner:alpine-v16.7.0 docker://haogeiscoming/gitlab-runner:alpine-v16.7.0
